@@ -1,67 +1,145 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap");
 
-body {
-  font-family: "Roboto", sans-serif;
-}
-
 /* reset style */
 * {
   box-sizing: border-box;
-  margin: 5px;
-  padding: 2px;
+  border: 0px;
+  padding: 0px;
+  margin: 0px;
 }
 
-.navbar {
-  justify-content: space-around;
-  list-style: none;
-  padding: 0 px;
+body {
+  font-family: "Roboto", sans-serif;
   background-color: hwb(92 79% 14%);
+  padding: 20px;
+}
+
+/* reset navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  padding: 5px;
+  background-color: hwb(92 79% 14%);
+  border-radius: 10px;
+  /* li */
+
+  li {
+    background-color: rgb(46, 47, 48);
+    border-radius: 30px;
+    padding: 10px 20px;
+    width: 15%;
+  }
+
+  /* a */
+  a {
+    display: block;
+    background-color: rgb(46, 47, 48);
+    font-size: 18px;
+    text-transform: capitalize;
+    text-align: center;
+    color: rgba(239, 233, 223, 0.817);
+    text-decoration: none;
+  }
+}
+section {
+  border: 2px solid #ccc;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px 0;
+  box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.home img {
+  display: block;
+  margin: 20px auto;
+  max-width: 100%;
   border-radius: 10px;
 }
 
-.navbar li {
-  list-style: none;
-  display: inline;
-  margin: 0px;
-}
-/* reset nav a */
-nav a {
-  text-decoration: none;
-  /* display :block; */
-  background-color: rgb(46, 48, 47);
-  color: rgba(239, 233, 223, 0.817);
-  padding: 10px;
-  font-size: 18x;
-  border-radius: 30px;
-  text-transform: capitalize;
-  text-align: center;
-}
-body {
-  padding: 20px;
-}
+/* reset headings */
 h1 {
   font-size: 50px;
-}
-h1 span {
   color: #50544d;
   font-family: roboto;
-  text-align: centre;
+  text-align: center;
+  margin: 10px;
 }
-.about,
-.work,
-.resume {
-  margin: 50px auto;
-  max-width: 1000px;
+
+section h2 {
+  text-transform: capitalize;
+  font-size: 2rem;
+  margin: 10px;
 }
-.contact form {
+
+h4 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 5px;
+}
+h3 {
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 5px;
+}
+
+/* resume styles */
+.resume h4 {
+  margin-bottom: 5px; /* Adds some spacing below the heading */
+}
+
+.resume ul {
+  padding-left: 80px; /* Indents the list inside h4 */
+}
+
+/* reset contact */
+.contact {
+  text-align: center;
+}
+
+.contact p {
+  margin: 10px 0; /* Adds some spacing between each contact detail */
+}
+
+/* form styles */
+form {
+  width: 100%;
+  padding: 5px;
+  max-width: 800px;
+  margin-inline: auto;
+
+  /* button */
+
+  button {
+    padding: 10px 20px;
+    background-color: rgb(54, 57, 52);
+    color: white;
+    border-radius: 10px;
+    font-size: 1.5rem;
+    width: 100%;
+    font-weight: 700;
+    text-transform: capitalize;
+  }
+}
+
+.form-control {
+  display: flex;
   flex-direction: column;
-  display: inline-block;
-}
-.contact button {
-  background: #2575fc;
-  color: white;
-  border: none;
-  padding: 10px;
-  cursor: pointer;
-  border-radius: 5px;
+  gap: 5px;
+  padding: 5px;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 10px;
+
+  /* input,textarea */
+  input,
+  textarea {
+    padding: 10px 20px;
+    border-radius: 10px;
+  }
+
+  label {
+    font-size: 1.4rem;
+    font-weight: 700;
+  }
 }
